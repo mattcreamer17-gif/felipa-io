@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>A read on where the model actually earns its keep inside Felipa. | Felipa.io</title>
+<meta name="description" content="Matt here from Eduba. Saw the money-personality test and the Plaid integration. My bet is about half of what you are calling AI is really a rules engine, and the other half is where the model earns its keep. If I am right, you are probably spending more on tokens than you need to. Want to compare notes?" />
+<meta name="robots" content="noindex, nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="https://felipa.io" target="_blank" rel="noopener" aria-label="Felipa.io">
+    <img src="logo.png" alt="Felipa.io" />
+  </a>
+  <span class="tagline">Where psychology meets money</span>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">A note for Analys.</p>
+    <h1>A read on where the model actually earns its keep inside Felipa.</h1>
+    <p class="kicker">Built for Felipa.io ahead of eMerge Americas 2026, booth SS20.</p>
+    <a class="cta" href="https://calendly.com/thecro-eduba/30min" target="_blank" rel="noopener">
+      <span>30 minutes with Matt</span>
+      <span class="cta-arrow" aria-hidden="true">&rarr;</span>
+    </a>
+    <p class="cta-sub">Bring one decision you are stuck on.</p>
+  </div>
+  <div class="hero-card" aria-hidden="true">
+    <div class="chip">Money Personality</div>
+    <div class="stack">
+      <div class="row"><span>Builder</span><span class="dot"></span></div>
+      <div class="row"><span>Balancer</span><span class="dot"></span></div>
+      <div class="row"><span>Maestro</span><span class="dot"></span></div>
+      <div class="row active"><span>Ma&ntilde;ana</span><span class="dot on"></span></div>
+    </div>
+    <div class="meter">
+      <span>model</span>
+      <div class="bar"><i style="width:10%"></i></div>
+      <span>rules</span>
+      <div class="bar"><i style="width:30%"></i></div>
+      <span>code</span>
+      <div class="bar"><i style="width:60%"></i></div>
+    </div>
+  </div>
+</section>
+
+<section class="pitch">
+  <p class="lead">Felipa is built on a clean idea. Money is emotional. The apps that ignore that part lose. The ones that lean into it, in the right way, can change how a whole generation handles their paychecks. <em>Where psychology meets money</em> is a positioning line most brands would dilute in six months. You are holding it.</p>
+
+  <p>Underneath the positioning, there is a product. A Money Personality Test that sorts users into four archetypes. A <a href="https://plaid.com" target="_blank" rel="noopener">Plaid</a> hookup that reads the real transaction history. A recommendation layer that ties those two together and tries to sound like a friend, not a bank. The promise is a financial therapist in your pocket. The question is which parts of that promise belong to the model, which parts belong to plain code, and which parts are really a community playing a role that no software does well.</p>
+
+  <div class="callout">
+    <div class="callout-label">The frame</div>
+    <p>A rough <strong>60/30/10</strong>. Roughly 60 percent of most product problems are traditional code and database work. Roughly 30 percent are rule-based logic. Roughly 10 percent are genuine AI problems where the model has to reason over unstructured input. The work is figuring out which layer each piece of your product actually belongs on.</p>
+  </div>
+
+  <p>Most consumer AI apps get this wrong on the first build. They put an LLM on the categorization step because it is easy to prompt, and pay for it in latency and cost at scale. They put rules on the coaching step because it feels safer, and pay for it in flat, un-personal copy. Felipa has the chance to draw the lines more carefully from the start.</p>
+
+  <p>A recent engagement (<strong>Feeld</strong>, scoped sprint) went through exactly this exercise with a product CTO. Output was a workshop, a small set of advisory calls, and two written artifacts: an Organizational Context Architecture and a Strategic Operations Framework. That sprint helped the team decide what to build in-house, what to push to a model, and what to leave alone. For a consumer app at Felipa&rsquo;s stage, the same frame scaled down to the smallest useful shape is probably the right unit of work.</p>
+
+  <p>The methodology behind this is documented in a paper called <strong>Interpretable Context Methodology</strong>, submitted to ACM TiiS, public repo under MIT license: <a href="https://github.com/RinDig/Interpretable-Context-Methodology-ICM-" target="_blank" rel="noopener">github.com/RinDig/Interpretable-Context-Methodology-ICM-</a>. The short version is that a small agent that holds a user&rsquo;s financial context can be organized as a layered filesystem. Identity at the top. Rules next. Memory after that. Working artifacts at the bottom. The layers are auditable and swappable. For a product that gives people advice about their money, this matters.</p>
+
+  <p class="nlp-line">Eduba partners with <a href="https://nlplogix.com" target="_blank" rel="noopener">NLP Logix</a> for work that sits below the orchestration layer. NLP Logix has been in machine learning since 2011 and runs over 150 data scientists.</p>
+</section>
+
+<section class="threads">
+  <div class="threads-inner">
+    <h2>Three threads worth pulling at the booth.</h2>
+    <ol>
+      <li>
+        <span class="num">01</span>
+        <p>When the app gives a user a SMART recommendation, how much of that output is the model and how much is structured logic on top of categorized transactions.</p>
+      </li>
+      <li>
+        <span class="num">02</span>
+        <p>The funnel from test-taker to active weekly user. Where it falls off hardest, and which of the three layers (acquisition, retention, club) is doing the softest work.</p>
+      </li>
+      <li>
+        <span class="num">03</span>
+        <p>If a model hallucinates a recommendation that costs a user money, who is on the hook today, and what the review loop looks like.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="cta-block">
+  <div class="cta-inner">
+    <p class="cta-eyebrow">Next step.</p>
+    <h2>30 minutes with Matt. That is the whole ask.</h2>
+    <p class="cta-body">Bring one decision you are stuck on, whether it is the model layer, the funnel, the governance posture, or the club pricing. Matt Creamer runs enterprise outreach for Eduba. Calendar link below.</p>
+    <a class="cta big" href="https://calendly.com/thecro-eduba/30min" target="_blank" rel="noopener">
+      <span>Book 30 minutes with Matt</span>
+      <span class="cta-arrow" aria-hidden="true">&rarr;</span>
+    </a>
+    <p class="cta-hint">calendly.com/thecro-eduba/30min</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="foot-inner">
+    <p>Prepared for Analys Falchuk and the Felipa.io team.</p>
+    <p class="foot-eduba">Prepared by Eduba, <a href="https://eduba.io" target="_blank" rel="noopener">eduba.io</a>.</p>
+  </div>
+</footer>
+
+</body>
+</html>
